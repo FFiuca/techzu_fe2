@@ -442,9 +442,9 @@ export default function Index(){
     return <App>
         <Container>
             <Row>
-                <Col md={9} style={{
-                    height:'100vH',
-                    overflowY:'auto',
+                <Col md={9} className="mt-1 mb-3" style={{
+                    // height:'100vH',
+                    // overflowY:'auto',
                  }}>
                     <FullCalendar
                         plugins={[ dayGridPlugin, interactionPlugin ]}
@@ -457,7 +457,7 @@ export default function Index(){
                 </Col>
                 <Col md={3}>
                     <Row>
-                        <Col md={12} className="d-flex justify-content-between">
+                        <Col md={12} className="mt-1 mb-3 d-flex justify-content-between">
                             <h4>Event Info</h4>
                             <div>
                                 <Button onClick={()=>{
